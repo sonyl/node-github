@@ -138,3 +138,17 @@ exports.log = function() {
         console.log(pfx + " " + line);
     });
 };
+
+
+
+exports.isUndefined = function isUndefined(x) {
+    return typeof x === 'undefined';
+};
+
+exports.isNull = function isNull(x) {
+    return x === null;
+};
+
+exports.isFunction = function isFunction(x) {
+    return typeof x === 'function';
+};

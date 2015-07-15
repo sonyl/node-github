@@ -3911,5 +3911,27 @@
             "method": "GET",
             "params": { }
         }
+    },
+
+    "licenses": {
+        "get-all": {
+            "url": "/licenses",
+            "method": "GET",
+            "params": {}
+        },
+        "get": {
+                "url": "/licenses/:key",
+                "method": "GET",
+                "params": {
+                    "key": {
+                        "type": "String",
+                        "required": true,
+                        "validation": "",
+                        "invalidmsg": "",
+                        "description": "the license key"
+                    }
+                }
+
+        }
     }
 }
